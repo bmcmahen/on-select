@@ -1,3 +1,8 @@
+1.0.0 / 2014-11-17
+==================
+ * add package.json [bmcmahen]
+ * remove selected module [bmcmahen]
+ * bump version to 1.0.0 inline with npm best practices [bmcmahen]
 
 0.1.0 / 2013-11-10
 ==================

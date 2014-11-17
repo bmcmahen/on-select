@@ -3,16 +3,24 @@
  * Dependencies
  */
 
-var selected = require('get-selected-text');
-var mod = require('modifier');
-var event = require('event');
-var raf = require('raf');
+var mod, event, raf;
+
+try {
+  mod = require('bmcmahen-modifier');
+  event = require('component-event');
+  raf = require('component-raf');
+} catch(err) {
+  mod = require('modifier');
+  event = require('event');
+  raf = require('raf');
+}
 
 /**
  * Selection
  */
 
 var selection = window.getSelection();
+var selected = selection.toString;
 
 /**
  * Invoke `fn(e)` when a user selects within `el`.

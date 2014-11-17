@@ -1,0 +1,30 @@
+{
+  "name": "on-select",
+  "version": "1.0.0",
+  "description": "invoke a callback when a user selects some text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bmcmahen/on-select.git"
+  },
+  "keywords": [
+    "selection",
+    "range",
+    "text",
+    "cursor"
+  ],
+  "author": "Amir Abu Shareb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bmcmahen/on-select/issues"
+  },
+  "homepage": "https://github.com/bmcmahen/on-select",
+  "dependencies": {
+    "bmcmahen-modifier": "^1.0.0",
+    "component-event": "^0.1.4",
+    "component-raf": "^1.2.0"
+  }
+}

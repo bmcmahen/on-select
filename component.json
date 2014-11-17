@@ -3,12 +3,11 @@
   "repo": "yields/on-select",
   "description": "Invoke a callback on user selection",
   "keywords": ["selection", "on-select", "on-selection"],
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "index.js",
   "scripts": ["index.js"],
   "dependencies": {
-    "yields/get-selected-text": "*",
     "bmcmahen/modifier": "*",
     "component/event": "*",
     "component/raf": "*"
