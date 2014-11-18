@@ -1,3 +1,7 @@
+1.0.1
+==================
+ * fix illegal invokation bug with getting selection string
+
 1.0.0 / 2014-11-17
 ==================
  * add package.json [bmcmahen]

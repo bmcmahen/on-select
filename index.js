@@ -20,7 +20,6 @@ try {
  */
 
 var selection = window.getSelection();
-var selected = selection.toString;
 
 /**
  * Invoke `fn(e)` when a user selects within `el`.
@@ -38,7 +37,7 @@ module.exports = function(el, fn){
   function callback(e){
     if (mod(e)) return;
     var id = raf(function(){
-      var str = selected();
+      var str = window.getSelection().toString();
       if (str) fn(e, str);
       raf.cancel(id);
     });
