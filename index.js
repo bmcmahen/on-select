@@ -15,11 +15,7 @@ try {
   raf = require('raf');
 }
 
-/**
- * Selection
- */
 
-var selection = window.getSelection();
 
 /**
  * Invoke `fn(e)` when a user selects within `el`.
@@ -31,20 +27,23 @@ var selection = window.getSelection();
  */
 
 module.exports = function(el, fn){
-  event.bind(el, 'mouseup', callback);
+  event.bind(window, 'mouseup', callback);
   event.bind(el, 'keyup', callback);
 
   function callback(e){
     if (mod(e)) return;
     var id = raf(function(){
-      var str = window.getSelection().toString();
-      if (str) fn(e, str);
+      var sel = window.getSelection();
+      var str = sel.toString();
+      if (str && el.contains(sel.anchorNode)) {
+        fn(e, str);
+      }
       raf.cancel(id);
     });
   }
 
   return function(){
-    event.unbind(el, 'mouseup', callback);
+    event.unbind(window, 'mouseup', callback);
     event.unbind(el, 'keyup', callback);
-  }
+  };
 };

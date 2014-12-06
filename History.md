@@ -1,3 +1,8 @@
+1.0.2
+==================
+* bind to window for more reliable usage
+* keep call to window inside of closure to avoid server errors
+
 1.0.1
 ==================
  * fix illegal invokation bug with getting selection string
