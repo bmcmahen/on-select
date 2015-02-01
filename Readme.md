@@ -1,13 +1,13 @@
 
 # on-select
 
-  Invoke a callback on user selection
+  Invoke a callback on user selection. This is a fork of `yields/on-select`.
 
 ## Installation
 
-  Install with [component(1)](http://component.io):
+  Install with Duo, Component, or NPM.
 
-    $ component install yields/on-select
+    $ npm install on-select
 
 ## Example
 

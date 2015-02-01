@@ -1,6 +1,6 @@
 {
   "name": "on-select",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "invoke a callback when a user selects some text",
   "main": "index.js",
   "scripts": {

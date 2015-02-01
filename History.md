@@ -1,3 +1,7 @@
+1.1.0
+================
+* add touchend events for mobile support
+
 1.0.2
 ==================
 * bind to window for more reliable usage

@@ -28,6 +28,7 @@ try {
 
 module.exports = function(el, fn){
   event.bind(window, 'mouseup', callback);
+  event.bind(window, 'touchend', callback);
   event.bind(el, 'keyup', callback);
 
   function callback(e){
@@ -44,6 +45,7 @@ module.exports = function(el, fn){
 
   return function(){
     event.unbind(window, 'mouseup', callback);
+    event.unbind(window, 'touchend', callback);
     event.unbind(el, 'keyup', callback);
   };
 };

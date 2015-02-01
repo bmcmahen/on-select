@@ -1,11 +1,7 @@
+build: node_modules
+	@browserify index.js --im -s onselect -o bundle.js
 
-build: components index.js
-	@component build --dev
+node_modules:
+	@npm install
 
-components: component.json
-	@component install --dev
-
-clean:
-	rm -fr build components template.js
-
-.PHONY: clean
+.PHONY: build
